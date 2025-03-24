@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rizki Yehezkiel Sigalingging</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script>
+        function toggleMenu() {
+            document.getElementById("mobile-menu").classList.toggle("hidden");
+        }
+
+    </script>
+</head>
+
+<body class="font-poppins px-5 mb-20">
+
+    <div class="max-w-7xl m-auto">
+        <!-- Navbar -->
+        <nav class="flex justify-between py-4 items-center">
+            <div class="w-32 sm:w-52">
+                <h1 class="font-bold text-2xl tracking-wide">Rizki Yehezkiel Sigalingging</h1>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden" onclick="toggleMenu()">
+                <ion-icon name="menu" class="text-3xl"></ion-icon>
+            </button>
+
+            <ul class="hidden md:flex items-center gap-5 font-semibold">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Project</a></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Kontak Saya</a></li>
+            </ul>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <ul id="mobile-menu"
+            class="hidden flex flex-col gap-3 font-semibold mt-3 bg-white shadow-md p-5 rounded-lg md:hidden">
+            <li><a href="#">Home</a></li>
+                <li><a href="#">Project</a></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Kontak Saya</a></li>
+        </ul>
+
+        <!-- Hero Section -->
+        <div class="flex flex-col-reverse md:flex-row gap-8 md:gap-0 justify-between mt-28 text-center m-auto w-fit">
+            <div class="flex flex-col w-3/4 m-auto">
+                <h1 class="text-xl font-semibold">Halo, saya Rizki Yehezkiel Sigalingging</h1>
+                <p>Saya merupakan mahasiswa Politeknik Negeri Batam prodi Teknik Rekayasa Perangkat Lunak. Saya sangat tertarik dengan IT.</p>
+            </div>
+        </div>
+
+        <!-- Services Section -->
+        <div class="flex flex-col sm:flex-row justify-between w-full md:w-3/5 gap-5 mt-32">
+            <h1 class="font-semibold bg-yellow px-2 py-1 h-fit text-2xl w-fit whitespace-nowrap">Project Saya</h1>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-12 mt-10">
+            <div class="flex flex-row justify-between border-4 rounded-xl p-8 gap-4 border-primary2">
+                <div class="flex flex-col justify-between gap-5 w-2/3 sm:w-full">
+                    <h1 class="bg-primary1 text-lg font-bold p-1 rounded-sm">PBL: Absensi Online.</h1>
+                    <a href="#" class="py-1 flex gap-2 items-center space-x-1">
+                        <ion-icon name="arrow-dropright-circle" class="text-4xl md:text-4xl text-primary2"></ion-icon>
+                        <span class="font-semibold text-lg">Selengkapnya</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex flex-row justify-between border-4 rounded-xl p-8 bg-primary2 gap-4 border-primary2">
+                <div class="flex flex-col justify-between gap-5 w-2/3 sm:w-full">
+                    <h1 class="bg-white text-lg font-bold p-1 rounded-sm ">Saya: Portofolio</h1>
+                    <a href="#" class="py-1 flex gap-2 items-center space-x-1">
+                        <ion-icon name="arrow-dropright-circle" class="text-4xl md:text-4xl"></ion-icon>
+                        <span class="font-semibold text-lg">Selengkapnya</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-col-reverse gap-2 md:flex-row justify-between items-center mt-20 px-6 md:px-12 py-14 bg-slate-100 rounded-2xl"
+            id="about-us">
+            <div class="flex flex-col gap-6 text-center md:text-left my-auto w-full md:w-2/3">
+                <h1 class="text-3xl font-bold">About me</h1>
+                <p>Rizki Yehezkiel Sigalingging adalah seorang mahasiswa di Politeknik Batam, jurusan Rekayasa Perangkat Lunak. Saat ini, ia memiliki keahlian dalam berbagai bahasa pemrograman, termasuk <b>HTML, CSS, PHP dan Python</b>. Dengan fokus pada pengembangan web dan perangkat lunak, Raihan terus mengasah kemampuannya untuk menciptakan solusi digital yang inovatif dan efisien.</p>
+            </div>
+
+            <div class="flex w-full md:w-52 justify-center">
+                <img src="assets/about.png" alt="" class="w-40 md:w-52 max-w-full">
+            </div>
+        </div>
+
+        <!-- Services Section -->
+        <div class="flex flex-col sm:flex-row justify-between w-full md:w-3/5 gap-5 mt-20">
+            <h1 class="font-semibold px-2 py-1 h-fit text-2xl w-fit whitespace-nowrap">Kontak Saya</h1>
+        </div>
+
+
+        <div class="flex bg-black text-white p-8 md:p-16 gap-5 mt-10 rounded-3xl flex-wrap sm:flex-nowrap">
+            <div class="flex m-auto gap-5 justify-between">
+                <div
+                    class="flex flex-col gap-2 pr-5 md:py-0 border-white md:border-b-0 md:border-r md:border-white text-center">
+                    <div class=""><ion-icon name="logo-instagram" class=" text-primary1 text-3xl"></ion-icon></div>
+
+                    <p>Instagram</p>
+                </div>
+            <div
+                class="flex flex-col gap-2 pr-5 md:py-0 border-white md:border-b-0 md:border-r md:border-white text-center">
+                <div class=""><ion-icon name="logo-linkedin" class=" text-primary1 text-3xl"></ion-icon></div>
+
+                <p>LinkedIn</p>
+            </div>
+                <div
+                    class="flex flex-col gap-2 pr-5 md:py-0 border-white md:border-b-0 text-center">
+                    <div class=""><ion-icon name="mail" class=" text-primary1 text-3xl"></ion-icon></div>
+                    <p>Gmail</p>
+                </div>
+            </div>
+
+            <div class="flex h-fit w-fit my-auto">
+                <p class="italic">"Tertarik untuk bekerja sama atau sekadar berbincang tentang teknologi? Jangan ragu untuk menghubungi saya, saya akan dengan senang hati merespons!"</p>
+            </div>
+            
+        </div>
+
+    </div>
+
+</body>
+
+</html>
